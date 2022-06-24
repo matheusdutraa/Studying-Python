@@ -1,0 +1,22 @@
+# Pergunte as 4 nota bimestrais, mostre a média, diga se está de recuperação, aprovado ou reporvado, e o tipo da váriavel
+
+n1 = int(input("Qual a nota do seu primeiro bimestre? \n"))
+
+n2 = int(input("Qual a nota do seu segundo bimestre? \n"))
+
+n3 = int(input("Qual a nota do seu terceiro bimestre? \n"))
+
+n4 = int(input("Qual a nota do seu quarto bimestre? \n"))
+
+media = (n1 + n2 + n3 + n4) / 4
+
+if media <= 40:
+        print("A sua média é: ", media, ". Você está repovrado! \n")
+
+elif media >= 60:
+        print("A sua média é: ", media , ". Você está aprovado! \n")
+
+elif media >= 41 and media <= 59:
+        print("A sua média é: ", media , ". Você está de exame! \n")
+
+print("O tipo da várial da sua média é: ", type(media))
